@@ -20,7 +20,7 @@ matter of subreddit size, not content quality).
 
 This project fixes both:
 - **Fixed observation window**: every post's target is captured at exactly 24 hours
-  after submission, not "whenever I scraped it."
+  after submission.
 - **Per-subreddit relative threshold**: "viral" = top 10% *within that subreddit's*
   score distribution, so the label reflects relative performance, not subreddit size.
 
