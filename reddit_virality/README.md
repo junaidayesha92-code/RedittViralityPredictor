@@ -20,7 +20,7 @@ matter of subreddit size, not content quality).
 
 This project fixes both:
 - **Fixed observation window**: every post's target is captured at exactly 24 hours
-  after submission, not "whenever I scraped it."
+  after submission.
 - **Per-subreddit relative threshold**: "viral" = top 10% *within that subreddit's*
   score distribution, so the label reflects relative performance, not subreddit size.
 
@@ -115,10 +115,7 @@ streamlit run app.py
 
 ## Deployment
 
-Deployed free on [Streamlit Community Cloud](https://share.streamlit.io):
-1. Push this repo to GitHub
-2. Connect the repo at share.streamlit.io, point at `app.py`
-3. Add Reddit API secrets under app settings if using live collection
+https://junaidayesha92-code-redittviralitypre-reddit-viralityapp-t0z8iu.streamlit.app/
 
 ## Design decisions worth asking about in an interview
 
