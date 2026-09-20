@@ -4,9 +4,13 @@ Predicts whether a Reddit post will land in the **top 10% of scores for its subr
 within 24 hours, using only features available **at post time** — then explains *why*
 via SHAP, and lets you test draft titles interactively in a live dashboard.
 
-**[Live demo](#deployment)** · Built with Python, XGBoost, SHAP, Streamlit
+**[Live demo](https://junaidayesha92-code-redittviralitypre-reddit-viralityapp-t0z8iu.streamlit.app/)** · Built with Python, XGBoost, SHAP, Streamlit
 
----
+> **Note:** the deployed demo is currently trained on a synthetic dataset (same schema
+> as real Reddit data, generated to unblock development while a real 24-hour data
+> collection window runs — see [Data](#data)). Treat predictions as a demonstration
+> of the pipeline, not as real Reddit findings, until the model is retrained on
+> collected data.
 
 ## The problem
 
@@ -20,7 +24,7 @@ matter of subreddit size, not content quality).
 
 This project fixes both:
 - **Fixed observation window**: every post's target is captured at exactly 24 hours
-  after submission.
+  after submission, not "whenever I scraped it."
 - **Per-subreddit relative threshold**: "viral" = top 10% *within that subreddit's*
   score distribution, so the label reflects relative performance, not subreddit size.
 
@@ -115,7 +119,13 @@ streamlit run app.py
 
 ## Deployment
 
-https://junaidayesha92-code-redittviralitypre-reddit-viralityapp-t0z8iu.streamlit.app/
+Live at: **https://junaidayesha92-code-redittviralitypre-reddit-viralityapp-t0z8iu.streamlit.app/**
+
+Deployed free on [Streamlit Community Cloud](https://share.streamlit.io). To deploy
+your own copy:
+1. Push this repo to GitHub
+2. Connect the repo at share.streamlit.io, point at `app.py`
+3. Add Reddit API secrets under app settings if using live collection
 
 ## Design decisions worth asking about in an interview
 
