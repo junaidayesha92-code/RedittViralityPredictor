@@ -115,10 +115,7 @@ streamlit run app.py
 
 ## Deployment
 
-Deployed free on [Streamlit Community Cloud](https://share.streamlit.io):
-1. Push this repo to GitHub
-2. Connect the repo at share.streamlit.io, point at `app.py`
-3. Add Reddit API secrets under app settings if using live collection
+https://junaidayesha92-code-redittviralitypre-reddit-viralityapp-t0z8iu.streamlit.app/
 
 ## Design decisions worth asking about in an interview
 
