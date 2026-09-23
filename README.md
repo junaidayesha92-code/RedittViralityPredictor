@@ -4,7 +4,7 @@ Predicts whether a Reddit post will land in the **top 10% of scores for its subr
 within 24 hours, using only features available **at post time** — then explains *why*
 via SHAP, and lets you test draft titles interactively in a live dashboard.
 
-**[Live demo](https://junaidayesha92-code-redittviralitypre-reddit-viralityapp-t0z8iu.streamlit.app/)** · Built with Python, XGBoost, SHAP, Streamlit
+**[Live demo](https://redittvirality.streamlit.app/)** · Built with Python, XGBoost, SHAP, Streamlit
 
 > **Note:** the deployed demo is currently trained on a synthetic dataset (same schema
 > as real Reddit data, generated to unblock development while a real 24-hour data
